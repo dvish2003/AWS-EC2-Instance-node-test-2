@@ -19,7 +19,7 @@ dbConnect();
 // Routes
 app.use("/api", rootRouter);
 
-app.use("/api/products",(req, res) => {
+app.get("/api/products",(req, res) => {
   return res.json({message: "Products route is working!"});
 });
 

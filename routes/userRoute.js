@@ -2,7 +2,7 @@ import { Router } from "express";
 import { getAllUsers, saveUser } from "../controller/userController.js";
 
 const router = Router();
-router.use('/saveUser', saveUser);
-router.use('/getAllUsers', getAllUsers);
+router.post('/saveUser', saveUser);
+router.get('/getAllUsers', getAllUsers);
 
 export default router;
